@@ -1,0 +1,158 @@
+/* Google Fonts */
+/* be-vietnam-pro-regular - latin */
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/be-vietnam-pro-v10-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/be-vietnam-pro-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/be-vietnam-pro-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/be-vietnam-pro-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/be-vietnam-pro-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/be-vietnam-pro-v10-latin-regular.svg#BeVietnamPro') format('svg'); /* Legacy iOS */
+}
+/* be-vietnam-pro-600 - latin */
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  font-style: bold;
+  font-weight: 600;
+  src: url('../fonts/be-vietnam-pro-v10-latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/be-vietnam-pro-v10-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/be-vietnam-pro-v10-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/be-vietnam-pro-v10-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/be-vietnam-pro-v10-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/be-vietnam-pro-v10-latin-600.svg#BeVietnamPro') format('svg'); /* Legacy iOS */
+}
+
+/*!
+ * Custom Styles
+ */
+
+body {
+    font-family: 'Be Vietnam Pro';
+    padding-top: 136px;
+}
+
+ol, ul, dl {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+a.navbar-brand > img {
+    height: 70px;
+}
+
+// Ajustes logo marca para dispositivos móviles
+@media (max-width: 991px) {
+  body {
+    font-family: 'Be Vietnam Pro';
+    padding-top: 66px;
+  }
+
+  a.navbar-brand > img {
+    height: 40px
+  }
+}
+
+// Owl Carousel
+
+:root {
+  --main-white-color: white;
+  --main-black-color: black;
+}
+ 
+.static {
+  position: static; 
+}
+ 
+.cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.owl-carousel {
+  position: relative;
+  height: calc(100vh - 58px - 20vh);
+  background-color: lightgray;
+}
+
+.owl-stage-outer,
+.owl-stage,
+.owl-item,
+.owl-slide
+ {
+    height: 100%
+}
+
+.owl-carousel .owl-slide > div {
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(0deg, rgba(0,0,0,0.5998774509803921) 25%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.5998774509803921) 25%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0.5998774509803921) 25%, rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+ 
+.owl-carousel .owl-slide-animated {
+  transform: translateX(20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.05s;
+}
+ 
+.owl-carousel .owl-slide-animated.is-transitioned {
+  transform: none;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+ 
+.owl-carousel .owl-slide-title.is-transitioned {
+  transition-delay: 0.2s;
+}
+ 
+.owl-carousel .owl-slide-subtitle.is-transitioned {
+  transition-delay: 0.35s;
+}
+ 
+.owl-carousel .owl-slide-cta.is-transitioned {
+  transition-delay: 0.5s;
+}
+
+.owl-carousel .owl-slide-text.owl-slide-title,
+.owl-carousel .owl-slide-text.owl-slide-subtitle {
+    text-shadow: 1px 1px 8px black, 1px 1px 8px black;
+}
+
+.owl-carousel .owl-dots .owl-dot span {
+  background: transparent;
+  border: 1px solid var(--main-black-color);
+  transition: all 0.2s ease;
+}
+ 
+.owl-carousel .owl-dots .owl-dot:hover span,
+.owl-carousel .owl-dots .owl-dot.active span {
+  background: var(--main-black-color);
+}
+
+.owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    margin: 0 !important;
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    float: left;
+}
+
+.owl-carousel .owl-nav .owl-next {
+    float: right;
+}
+
+// Owl Carousel
